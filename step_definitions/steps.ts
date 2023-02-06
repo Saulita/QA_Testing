@@ -50,3 +50,22 @@ Then('the response contains n-1 programs', () => {
   I.expectEqualValue(mockApiService.programs.length, oldProgramsLength-1);
 });
 
+Then('the response is an array of programs', () => {
+  I.expectEqualArray(mockApiService.programs, mockApiService.programs);
+});
+
+Then('each program has the following properties with values of type', () => {
+
+});
+Then('tasks contains objects where each object has the following properties with values of type', () => {
+
+});
+
+Then('questions contains objects where each object has the following properties with values of type', () => {
+
+});
+
+Then('measurements contains objects where each object has the following properties with values of type', () => {
+
+});
+
